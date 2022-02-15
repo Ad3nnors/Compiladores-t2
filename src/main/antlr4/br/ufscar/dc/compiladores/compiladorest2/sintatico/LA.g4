@@ -17,6 +17,13 @@ ESC_SEQ
     :   '\\\'' 
     |   '\\"'
     ;
+IDENT   
+    :   LITERAL (LITERAL | NUM | '_')*
+    ;
+fragment
+LITERAL 
+    :   ('a'..'z'|'A'..'Z')
+    ;
 COMENTARIO
     :   '{' ~('\n'|'\r'|'}')* '\r'? '}' {skip();}
     ;
@@ -34,8 +41,7 @@ CADEIA_ERRADA
     |   ('"' ( ESC_SEQ | ~('\''|'\\'|'"'|'\n') )*? '\n')
     ;
 programa
-    :   { System.out.println("Começou um programa"); }
-    declaracoes 'algoritmo' corpo 'fim_algoritmo' EOF 
+    :   declaracoes 'algoritmo' corpo 'fim_algoritmo' EOF 
     ;
 declaracoes
     :   decl_local_global*
@@ -72,7 +78,7 @@ tipo_basico_ident
     |   IDENT
     ;
 tipo_estendido
-    :   'ˆ'? tipo_basico_ident
+    :   '^'? tipo_basico_ident
     ;
 valor_constante
     :   CADEIA 
@@ -132,7 +138,7 @@ cmdFaca
     :   'faca' cmd* 'ate' expressao
     ;
 cmdAtribuicao
-    :   'ˆ'? identificador '<-' expressao
+    :   '^'? identificador '<-' expressao
     ;
 cmdChamada
     :   IDENT '(' expressao (',' expressao)* ')'
@@ -177,7 +183,7 @@ parcela
     |   parcela_nao_unario
     ;
 parcela_unario
-    :   'ˆ'? identificador
+    :   '^'? identificador
     |   IDENT '(' expressao (',' expressao)* ')'
     |   NUM_INT 
     |   NUM_REAL 
@@ -216,13 +222,6 @@ op_logico_1
     ;
 op_logico_2
     :   'e'
-    ;
-IDENT   
-    :   LITERAL (LITERAL|NUM)* ('_')* (LITERAL|NUM)*
-    ;
-fragment
-LITERAL 
-    :   ('a'..'z'|'A'..'Z')
     ;
 ERROR   
     :   .

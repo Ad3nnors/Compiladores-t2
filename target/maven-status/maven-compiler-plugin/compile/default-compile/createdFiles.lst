@@ -50,6 +50,7 @@ br\ufscar\dc\compiladores\compiladorest2\sintatico\LAParser$Parcela_unarioContex
 br\ufscar\dc\compiladores\compiladorest2\sintatico\LAParser$Op_unarioContext.class
 br\ufscar\dc\compiladores\compiladorest2\sintatico\LAParser$ProgramaContext.class
 br\ufscar\dc\compiladores\compiladorest2\sintatico\LAParser$Decl_local_globalContext.class
+br\ufscar\dc\compiladores\compiladorest2\MyCustomErrorListener.class
 br\ufscar\dc\compiladores\compiladorest2\sintatico\LAParser$ExpressaoContext.class
 br\ufscar\dc\compiladores\compiladorest2\sintatico\LABaseListener.class
 br\ufscar\dc\compiladores\compiladorest2\sintatico\LAParser$CmdChamadaContext.class
