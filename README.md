@@ -20,7 +20,7 @@ Autores:
 
 O trabalho 2 (T2) da disciplina consiste na implementação de um analisador semantico para a linguagem LA (Linguagem Algorítmica) desenvolvida pelo prof. Jander, no âmbito do DC/UFSCar. O analisador sintático deve ler um programa-fonte e apontar onde existe erro sintático, indicando a linha e o lexema que causou a detecção do erro.
   
-Os erros léxicos detectados no T1 devem continuar sendo detectados corretamente. Link T1.
+Os erros léxicos detectados no T1 devem continuar sendo detectados corretamente. Link T1: https://github.com/Ad3nnors/Compiladores-T1
 
 <div id='implementacao'>
 
@@ -54,7 +54,7 @@ Como resultado, seu compilador deve ler a entrada de C:\compiladorest1\casos-de-
 Encontram-se também nesse projeto:
   
 Os casos de teste <br>
-O compilador automático 
+O compilador automático. Acesse https://github.com/dlucredio/compiladores-corretor-automatico/blob/master/Compiladores.CorretorT1T2T3.docx.pdf
 
 Todo esse conteúdo foi disponibilizado pelo professor. 
 
