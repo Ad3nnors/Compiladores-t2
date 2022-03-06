@@ -18,7 +18,7 @@ Autores:
 
 ## Descrição
 
-O trabalho 2 (T2) da disciplina consiste na implementação de um analisador semantico para a linguagem LA (Linguagem Algorítmica) desenvolvida pelo prof. Jander, no âmbito do DC/UFSCar. O analisador sintático deve ler um programa-fonte e apontar onde existe erro sintático, indicando a linha e o lexema que causou a detecção do erro.
+O trabalho 2 (T2) da disciplina consiste na implementação de um analisador sintático para a linguagem LA (Linguagem Algorítmica) desenvolvida pelo prof. Jander, no âmbito do DC/UFSCar. O analisador sintático deve ler um programa-fonte e apontar onde existe erro sintático, indicando a linha e o lexema que causou a detecção do erro.
   
 Os erros léxicos detectados no T1 devem continuar sendo detectados corretamente. Link T1: https://github.com/Ad3nnors/Compiladores-T1
 
